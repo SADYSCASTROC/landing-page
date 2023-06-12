@@ -1,0 +1,107 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Estilos específicos para tablet */
+    main {
+        margin-top: 95px;
+    }
+
+    .main-text-img {
+        margin-top: 10px;
+        height: 65vh;
+    }
+
+    .main-text-img .main-contener-text {
+        height: 55vh;
+    }
+
+    .main-contener-text h3 {
+        width: 100%;
+        font-size: 2.9rem;
+    }
+
+    .main-contener-text h2 {
+        font-size: 2.3rem;
+    }
+
+    .main-text-description p {
+        margin-top: 6px;
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 2.1rem;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main-ul {
+        font-size: 15px;
+        padding-left: 160px;
+        list-style-type: none;
+        font-size: 1.5rem;
+    }
+
+
+    .main-text-alter {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #main-text-otorrinolaringologo {
+        color: var(--yellow);
+        margin-top: 18px;
+        font-size: 2.2rem;
+    }
+
+    .main-section-contact {
+
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .main-contact-buton {
+        background-color: var(--yellow);
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        height: 35px;
+        font-size: 1.5rem;
+        width: auto;
+        color: black;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px;
+    }
+
+    .footer-section-logo h2 {
+        margin-left: 60px;
+    }
+
+    .footer-section-contac {
+        padding-left: 10px;
+        margin-top: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: initial;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .foter-icons {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 30%;
+    }
+
+
+    .footer-section-contac p {
+        width: 55%;
+        padding: 10px;
+    }
+
+
+    .derechosAutor {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

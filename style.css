@@ -1,0 +1,350 @@
+:root {
+    /* Colores */
+    --leters-p: #3e3d3d;
+    --Light-Blue: rgb(168, 207, 214);
+    --dark-blue: rgb(21, 101, 160);
+    --yellow: rgb(251, 202, 0);
+    --Just-White: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    background-color: var(--Light-Blue);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .herder-text {
+    color: var(--Just-White);
+    width: 220px;
+}
+
+main {
+    margin-top: 85px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.main-text-img {
+    margin-top: 8px;
+    width: 100%;
+    min-width: 320px;
+    height: 38vh;
+    background-image: url("./assets/img/heroImg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn 8s ease forwards;
+    background-attachment: fixed;
+}
+
+.main-text-img .main-contener-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 2.2rem;
+    height: 33vh;
+    color: var(--Just-White);
+    text-align: center;
+}
+
+.main-contener-text h3 {
+    width: 180px;
+    font-weight: bold;
+    font-size: 1.9rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.main-contener-text h2 {
+    color: var(--yellow);
+    font-size: 1.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.main-text-description p {
+    margin-top: 2px;
+    color: var(--leters-p);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding: 12px;
+}
+
+.main-ul {
+    padding-left: 80px;
+    list-style-type: none;
+    font-size: 1.4rem;
+
+}
+
+ul.main-ul li::before {
+    content: "\2022";
+    color: var(--yellow);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.5em;
+    transform: scale(1.5);
+    line-height: 2rem;
+}
+
+.main-text-alter {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Just-White);
+    background-color: var(--dark-blue);
+    margin-top: 45px;
+    padding-bottom: 30px;
+}
+
+#main-text-otorrinolaringologo {
+    color: var(--yellow);
+    margin-top: 15px;
+    font-size: 1.9rem;
+}
+
+.main-text-alter img {
+    height: 100px;
+    width: 100px;
+    padding: 8px;
+}
+
+.main-text-alter-container {
+    padding: 25px;
+    width: 80%;
+    background-color: rgb(80, 140, 209);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.main-text-alter-container h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.main-text-alter-container h3 {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.main-section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-section-contact p {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-contact-buton {
+    background-color: var(--yellow);
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 29px;
+    font-size: 1.5rem;
+    width: auto;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-contact-buton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+}
+
+.main-contact-buton:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.main-contact-buton:hover::before {
+    left: 0;
+}
+
+.span {
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.span-hors {
+    font-size: 1.2rem;
+}
+
+.main-contact-buton-time {
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/**/
+
+
+footer {
+    background-color: #ebebeb;
+    height: auto;
+    padding: 15px;
+}
+
+.footer-section-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section-logo h2 {
+    margin-top: 5px;
+    margin-left: 28px;
+    color: black;
+}
+
+.footer-section-logo img {
+    height: 35px;
+}
+
+.footer-section-contac {
+    padding-left: 10px;
+    margin-top: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+.footer-span-hours {
+    margin-left: 45px;
+}
+
+.foter-icons {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.span-foter {
+    color: black;
+    font-size: 18px;
+}
+
+.span-foter:hover {
+    color: rgb(73, 73, 73);
+    font-size: 18px;
+}
+
+
+.link-email-foter {
+    color: black;
+}
+
+.derechosAutor {
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 18px;
+    right: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    animation: move 4s infinite linear;
+}
+
+.whatsapp-float i {
+    margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+    background-color: #1c802c;
+    color: #fff;
+    animation: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-transform: all;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(2);
+    }
+}
